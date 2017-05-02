@@ -25,11 +25,14 @@
 			"depth" => 11.5
 		)
 	);
-
-	echo "The volume of the smallBox is: " . $boxes['smallBox']['length'] * $boxes['smallBox']['width'] * $boxes['smallBox']['depth']. " </br>";
-	echo "The volume of the middleBox is: " . $boxes['middleBox']['length'] * $boxes['middleBox']['width'] * $boxes['middleBox']['depth']. " </br>";
-	echo "The volume of the largeBox is: " . $boxes['largeBox']['length'] * $boxes['largeBox']['width'] * $boxes['largeBox']['depth']. " </br>";
-
+foreach ($boxes as $key => $value) {
+    echo "<p>The volume of the $key is:";
+    $boxVolume = 1;
+    foreach ($boxes[$key] as $boxSize){
+        $boxVolume *= $boxSize;
+    }
+    echo "$boxVolume</p>";
+}
 ?>
 </body>
 </html>
