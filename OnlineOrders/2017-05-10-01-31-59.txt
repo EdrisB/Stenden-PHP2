@@ -1,0 +1,6 @@
+Name:Forhoja - Price:14.95 - Quantity:0 - Total:0
+Name:Lagis - Price:0.99 - Quantity:4 - Total:3.96
+Name:Skribent - Price:3.99 - Quantity:3 - Total:11.97
+Name:Moppe - Price:11.95 - Quantity:2 - Total:23.9
+Name:Dokument - Price:1.99 - Quantity:6 - Total:11.94
+Grand Total:51.77
