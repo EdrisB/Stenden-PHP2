@@ -53,6 +53,8 @@
 			}
 			mysqli_close($DBConnect);
 		}
+
+		//DIT STUKKIE FIXEN
 	} elseif (isset($_POST['submit'])) {
 		$fields = array('date', 'time', 'flight', 'fNumber', 'airline', 'op1', 'op2', 'op3', 'op4', 'op5');
 		$error = false; //No errors yet
