@@ -15,6 +15,7 @@
 <body>
 <?php
 	$DBConnect = mysqli_connect("127.0.0.1", "root", "");
+	//view all
 	if (isset($_POST['view'])) {
 		if ($DBConnect === FALSE) {
 			echo "<p>Unable to connect to the database server.</p>"
@@ -60,7 +61,7 @@
 		$error = false; //No errors yet
 		foreach ($fields AS $fieldname) { //Loop trough each field
 			if (!isset($_POST[$fieldname]) || empty($_POST[$fieldname])) {
-				echo 'Field ' . $fieldname . ' misses!<br />'; //Display error with field
+				echo 'Field ' . $fieldname . ' missing!<br />'; //Display error with field
 				$error = true; //Yup there are errors
 			}
 		}
@@ -127,11 +128,11 @@
 		?>
 		<h2>OPINIONS!</h2>
 		<form action="Opdracht3-4.php" method="post">
-			<p>Date: <input type="date" name="date"></p>
-			<p>Time: <input type="time" name="time"></p>
-			<p>Flight: <input type="text" name="flight"></p>
-			<p>Flight number: <input type="number" name="fNumber"></p>
-			<p>Airline: <input type="text" name="airline"></p>
+			<p>Date: <input type="date" name="date" required></p>
+			<p>Time: <input type="time" name="time" required></p>
+			<p>Flight: <input type="text" name="flight" required></p>
+			<p>Flight number: <input type="number" name="fNumber" required></p>
+			<p>Airline: <input type="text" name="airline" required></p>
 			<p>Please give your opinion on the following</p>
 			<table>
 				<tr>
@@ -144,7 +145,7 @@
 				</tr>
 				<tr>
 					<th>Friendliness of customer staff</th>
-					<td><input type="radio" name="op1" value="No opinion"></td>
+					<td><input type="radio" name="op1" value="No opinion" required></td>
 					<td><input type="radio" name="op1" value="Poor"></td>
 					<td><input type="radio" name="op1" value="Fair"></td>
 					<td><input type="radio" name="op1" value="Good"></td>
@@ -153,7 +154,7 @@
 				<tr></tr>
 				<tr>
 					<th>Space for luggage storage</th>
-					<td><input type="radio" name="op2" value="No opinion"></td>
+					<td><input type="radio" name="op2" value="No opinion" required></td>
 					<td><input type="radio" name="op2" value="Poor"></td>
 					<td><input type="radio" name="op2" value="Fair"></td>
 					<td><input type="radio" name="op2" value="Good"></td>
@@ -162,7 +163,7 @@
 				<tr></tr>
 				<tr>
 					<th>Comfort of seating</th>
-					<td><input type="radio" name="op3" value="No opinion"></td>
+					<td><input type="radio" name="op3" value="No opinion" required></td>
 					<td><input type="radio" name="op3" value="Poor"></td>
 					<td><input type="radio" name="op3" value="Fair"></td>
 					<td><input type="radio" name="op3" value="Good"></td>
@@ -171,7 +172,7 @@
 				<tr></tr>
 				<tr>
 					<th>Cleanliness of aircraft</th>
-					<td><input type="radio" name="op4" value="No opinion"></td>
+					<td><input type="radio" name="op4" value="No opinion" required></td>
 					<td><input type="radio" name="op4" value="Poor"></td>
 					<td><input type="radio" name="op4" value="Fair"></td>
 					<td><input type="radio" name="op4" value="Good"></td>
@@ -180,7 +181,7 @@
 				<tr></tr>
 				<tr>
 					<th>Noise level of aircraft</th>
-					<td><input type="radio" name="op5" value="No opinion"></td>
+					<td><input type="radio" name="op5" value="No opinion" required></td>
 					<td><input type="radio" name="op5" value="Poor"></td>
 					<td><input type="radio" name="op5" value="Fair"></td>
 					<td><input type="radio" name="op5" value="Good"></td>
