@@ -29,11 +29,11 @@
 				echo "<tr><th>Product name</th><th>Type of hardware</th><th>Operating system</th><th>Frequency</th><th>Solution</th><th>Edit</th></tr>";
 				echo "<form action='Opdracht3-3-Edit.php' method='post'>";
 				while ($Row = mysqli_fetch_assoc($QueryResult)) {
-					echo "<td><input type='text' name='name' value='{$Row['name']}'></td>";
-					echo "<td><input type='text' name='hardware' value='{$Row['hardware']}'></td>";
-					echo "<td><input type='text' name='os' value='{$Row['os']}'></td>";
-					echo "<td><input type='number' min='1' name='frequency' value='{$Row['frequency']}'></td>";
-					echo "<td><textarea name='solution' cols='50' rows='4'>{$Row['solution']}</textarea></td>";
+					echo "<td><input type='text' name='name' value='{$Row['name']}' required></td>";
+					echo "<td><input type='text' name='hardware' value='{$Row['hardware']}' required></td>";
+					echo "<td><input type='text' name='os' value='{$Row['os']}' required></td>";
+					echo "<td><input type='number' min='1' name='frequency' value='{$Row['frequency']}' required></td>";
+					echo "<td><textarea name='solution' cols='50' rows='4' required>{$Row['solution']}</textarea></td>";
 					echo "<td><input type='submit' name='submit' value='submit'></td></tr>";
 					echo "<input type='hidden' name='problemid' value='{$Row['problemID']}'>";
 				}
@@ -44,7 +44,7 @@
 		}
 		mysqli_close($DBConnect);
 
-	} elseif (isset($_POST['submit'])) {
+	} elseif (isset($_POST['submit'])  && !empty($_POST['name']) && !empty($_POST['hardware']) && !empty($_POST['os']) && !empty($_POST['frequency']) && !empty($_POST['solution'])) {
 		$problemID = $_POST['problemid'];
 
 		$Name = stripslashes($_POST['name']);

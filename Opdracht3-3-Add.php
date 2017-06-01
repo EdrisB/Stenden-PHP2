@@ -6,13 +6,9 @@
 </head>
 <body>
 <?php
-	$Name = "";
-	$Hardware = "";
-	$Os = "";
-	$Frequency = "";
-	$Solution = "";
+	$Name = $Hardware = $Os = $Frequency = $Solution = "";
 
-	if (isset($_POST['submit'])) {
+	if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['hardware']) && !empty($_POST['os']) && !empty($_POST['frequency']) && !empty($_POST['solution'])) {
 		$DBConnect = mysqli_connect("127.0.0.1", "root", "");
 		if ($DBConnect === FALSE) {
 			echo "<p>Unable to connect to the database server.</p>"
@@ -78,11 +74,11 @@
 					<th>Solution</th>
 				</tr>
 				<tr>
-					<td><input type="text" name="name"</td>
-					<td><input type="text" name="hardware"</td>
-					<td><input type="text" name="os"</td>
-					<td><input type="number" min="1" name="frequency"</td>
-					<td><textarea name="solution" rows="4" cols="50"></textarea></td>
+					<td><input type="text" name="name" required></td>
+					<td><input type="text" name="hardware" required></td>
+					<td><input type="text" name="os" required></td>
+					<td><input type="number" min="1" name="frequency" required></td>
+					<td><textarea name="solution" rows="4" cols="50" required></textarea></td>
 				</tr>
 			</table>
 			<input type="submit" name="submit" value="submit">

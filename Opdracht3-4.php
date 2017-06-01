@@ -189,6 +189,8 @@
 				</tr>
 			</table>
 			<p><input type="submit" name="submit" value="Submit opinion"></p>
+		</form>
+		<form action="Opdracht3-4.php" method="post">
 			<p><input type="submit" name="view" value="View previous results"></p>
 		</form>
 		<?php

@@ -26,6 +26,7 @@
 			$query = "INSERT INTO $db_table VALUES ('$date', '$time', '$sender', '$message', '$public')";
 			mysqli_query($DBConnect, $query);
 			echo "<h2>Thanks for entering a message.</h2>";
+			echo "<a href='Opdracht3-8.php'>view results</a>";
 		}
 	}
 
