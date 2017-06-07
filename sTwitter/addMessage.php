@@ -24,7 +24,7 @@ if (isset($_POST['submit'])){
 
 <div class="main">
     <form action="" method="post" enctype="multipart/form-data">
-        <p><textarea name="message" cols="60" rows="7" ></textarea></p>
+        <p><textarea name="message" cols="60" rows="7" required></textarea></p>
         <p><input type="submit" name="submit"></p>
     </form>
 </div>

@@ -4,20 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d44ea0-1b46-4a05-a529-8a69d07b9edf" name="Default" comment="stenden twitter sql">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/food.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/addMessage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/navbar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/stwitter.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sTwitter/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sTwitter/Index.php" afterPath="$PROJECT_DIR$/sTwitter/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sTwitter/signup.php" afterPath="$PROJECT_DIR$/sTwitter/signUp.php" />
+    <list default="true" id="33d44ea0-1b46-4a05-a529-8a69d07b9edf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sTwitter/addMessage.php" afterPath="$PROJECT_DIR$/sTwitter/addMessage.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,14 +104,14 @@
       <file leaf-file-name="addMessage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sTwitter/addMessage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="442">
+              <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
               <folding>
-                <marker date="1496872545125" expanded="true" signature="362:408" ph="INSERT INTO stenden_messages... " />
-                <marker date="1496872545125" expanded="true" signature="362:438" ph="INSERT INTO stenden_messages... " />
-                <marker date="1496872545125" expanded="true" signature="362:439" ph="INSERT INTO stenden_messages... " />
-                <marker date="1496872545125" expanded="true" signature="362:440" ph="INSERT INTO stenden_messages... " />
-                <marker date="1496872545125" expanded="true" signature="362:467" ph="INSERT INTO ${$db_table}... " />
+                <marker date="1496872705353" expanded="true" signature="362:408" ph="INSERT INTO stenden_messages... " />
+                <marker date="1496872705353" expanded="true" signature="362:438" ph="INSERT INTO stenden_messages... " />
+                <marker date="1496872705353" expanded="true" signature="362:439" ph="INSERT INTO stenden_messages... " />
+                <marker date="1496872705353" expanded="true" signature="362:440" ph="INSERT INTO stenden_messages... " />
+                <marker date="1496872705353" expanded="true" signature="362:467" ph="INSERT INTO ${$db_table}... " />
               </folding>
             </state>
           </provider>
@@ -608,11 +597,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496872581162</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="stenden twitter sql">
+      <created>1496872650884</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1496872650884</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78096000" />
+    <option name="totallyTimeSpent" value="78157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -625,10 +621,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10607676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2153518" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1072,14 +1069,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sTwitter/addMessage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="442">
+          <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
           <folding>
-            <marker date="1496872545125" expanded="true" signature="362:408" ph="INSERT INTO stenden_messages... " />
-            <marker date="1496872545125" expanded="true" signature="362:438" ph="INSERT INTO stenden_messages... " />
-            <marker date="1496872545125" expanded="true" signature="362:439" ph="INSERT INTO stenden_messages... " />
-            <marker date="1496872545125" expanded="true" signature="362:440" ph="INSERT INTO stenden_messages... " />
-            <marker date="1496872545125" expanded="true" signature="362:467" ph="INSERT INTO ${$db_table}... " />
+            <marker date="1496872705353" expanded="true" signature="362:408" ph="INSERT INTO stenden_messages... " />
+            <marker date="1496872705353" expanded="true" signature="362:438" ph="INSERT INTO stenden_messages... " />
+            <marker date="1496872705353" expanded="true" signature="362:439" ph="INSERT INTO stenden_messages... " />
+            <marker date="1496872705353" expanded="true" signature="362:440" ph="INSERT INTO stenden_messages... " />
+            <marker date="1496872705353" expanded="true" signature="362:467" ph="INSERT INTO ${$db_table}... " />
           </folding>
         </state>
       </provider>
