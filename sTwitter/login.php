@@ -45,21 +45,23 @@ if (isset($_POST["submit"])) {
             $_SESSION['userName'] = $row['userName'];
             echo "<h2>U bent ingelogd! U wordt automatisch naar de hoofdpagina gebracht</h2>";
             header('Refresh: 3; URL=index.php');
+            exit;
         } else {
             $errMSG = "Incorrect Credentials, Try again...";
-        }
+        }mysqli_close($DBConnect);
     }
 }
 if (isset($errMSG)) {
     echo $errMSG;
 }
 ?>
-
+<div class="main">
 <form action="" method="post" enctype="multipart/form-data">
     <p>Username: <input type="text" name="username" required minlength="4"></p>
     <p>Password: <input type="password" name="password" required minlength="7"></p>
     <p><input type="submit" name="submit"></p>
 </form>
+</div>
 
 
 </body>

@@ -126,12 +126,13 @@ if (isset($_POST["submit"])) {
 
         echo "<h2>User aangemaakt! U wordt automatisch naar de hoofdpagina gebracht</h2>";
         header('Refresh: 3; URL=index.php');
+        exit;
     } else {
         echo "<h2>$errMsg</h2>";
-    }
+    }mysqli_close($DBConnect);
 } else {
     ?>
-
+<div class="main">
     <form action="" method="post" enctype="multipart/form-data">
         <p>Username: <input type="text" name="username" required minlength="4"></p>
         <p>Password: <input type="password" name="password" required minlength="7"></p>
@@ -140,7 +141,7 @@ if (isset($_POST["submit"])) {
         <p>Avatar: <input type="file" name="avatar" id="avatar" required></p>
         <p><input type="submit" name="submit"></p>
     </form>
-
+</div>
     <?php
 }
 ?>

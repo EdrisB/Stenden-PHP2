@@ -40,7 +40,7 @@ if (mysqli_num_rows($QueryResult) == 0) {
 
     </div>
     <?php
-}
+}mysqli_close($DBConnect);
 ?>
 </body>
 </html>
